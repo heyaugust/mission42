@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
+      log_in @user
   		# flash = a temporary message 
   		flash[:success] = "Welcome to Mission 42 Online!"
   		redirect_to @user
