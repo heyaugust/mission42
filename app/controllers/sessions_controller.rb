@@ -11,8 +11,10 @@ class SessionsController < ApplicationController
         redirect_back_or user
       else
         message  = "Account not activated. "
-        message += "Check your email for the activation link."
-        flash[:warning] = message
+        message += "Check your email for the activation link. "
+        # message += " #{view_context.link_to "Resend Activation E-Mail", { action: "@user.send_activation_email",
+        #         controller: "users", email: user.email }, method: :post}"
+        flash[:warning] = message 
         redirect_to root_url
       end
     else
