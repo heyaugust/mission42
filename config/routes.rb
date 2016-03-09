@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
-  # The priority is based upon order of creation: first created -> highest priority.
+  resources :microposts,          only: [:create, :destroy]
+  # resources :auth_mailers this means that u need a auth mailer contoroller. that takes in a param of who to send it tp
+
+   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
