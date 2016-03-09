@@ -8,7 +8,8 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to :back
     else
-      render 'static_pages/home'
+      flash[:danger] = "Ops. There was an error."
+      redirect_to :back
     end
   end
 
