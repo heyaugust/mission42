@@ -6,97 +6,105 @@
   <%= button_to "New", :action => "new", :form_class => "new-thing" %>
 <% end %>
 
-<div class="center jumbotron">
-  <h1>Mission 42 Online Race</h1>
+<div class="align-right jumbotron">
+<div class="container">
+  <div class="align-left">
+    <span>First Online Race in Singapore. Join The Unprecedented Experience.<br>Powered by Compresssport & 42Race</span>
+  </div><br><br>
+  <p>
+    Mission 42 Online Series - Mission 1
+  </p>
 
-  <h2>
-    Powered by Compressport & 42Race
-  </h2>
+  <h1>#MayDayBattle</h1>
 
-  <h1>Mission1 #MayDayBattle<br>Aliens vs. Commandos</h1>
+  <p>
+    13 May 2016 00:00 - 15 May 2016 23:59
+  </p>
 
-  <h2>
-    13 MAY 2016 00:00 - 15 MAY 2016 23:59 SGT
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "JOIN THE RACE", signup_path, class: "btn btn-lg btn-danger" %>
+</div>
 </div>
 
 <div class="container">
-<div class="row">
-  <div class="col-md-6">
-  <h2>#MayDayBattle Begins In:
+  <div class="row">
+  <h1>Aliens vs. Commandos<br>
+  Who will win the race? Choose your side.</h1>
   <span class="countdown-box">22</span> Days
   <span class="countdown-box">2</span> Hours
   <span class="countdown-box">50</span> Mins
   <span class="countdown-box">19</span> Sec
-  </h2>
-  </div>
-  <div class="col-md-6">
-  <h2>1st Pre-Race Mission Begins In:
-  <span class="countdown-box">5</span> Days
-  <span class="countdown-box">10</span> Hours
-  <span class="countdown-box">2</span> Mins
-  <span class="countdown-box">9</span> Sec
-  </h2>
-  </div>    
-</div> 
+  </div> 
+</div>
+<hr>
 
+<!-- about missiong 42 -->
 <div class="container">
 <div class="row">
-  <h1>About Mission 42 Online Race</h1>
-</div>
-<div class="row">
-<div class="col-md-6">
-<h2 class="align-left">
-    Mission 42 Online Race is the very first virtual run in Singapore and we aim to become the biggest and best online race in this region. 
-<br><br>
-The race experience is like a real race, with race bib, t-shirt, finishers’s medals and entitlement, except, you can decide the ROUTE yourself! What’s more, we have also planted various attractive gifts and rewards around the cities for your to discover!
-<br><br>
-This will be an unprecedented experience and the most exciting online-offline race/run/game you have ever participated!
-  </h2>
+  <div class="col-md-6">
+    <h1 class="align-left">About Mission 42 Online Race</h1>
+    <p>Mission 42 Online Race is the very first virtual run in Singapore and we aim to become the biggest and best online race in this region. </p>
+    <p>The race experience is like a real race, with race bib, t-shirt, finishers’s medals and entitlement, except, you can decide the ROUTE yourself! What’s more, we have also planted various attractive gifts and rewards around the cities for your to discover! </p>
+    <p>This will be an unprecedented experience and the most exciting online-offline race/run/game you have ever participated!</p>
   </div>
   <div class="col-md-6">
-  <%= link_to image_tag("page 2/running_app.jpg", alt: "Rails logo"),
-            '#' %>
+  <%= link_to image_tag("home/2-shirt.png", alt: "Rails logo", height: "350px", width: "auto", margin: "10px"), '#' %>
   </div>
 </div>
-
-</div>   
+</div>
+<hr>
   
+<!-- about #mayday battle -->
 <div class="container">
 <div class="row">
-  <h1>About Mission1 #MayDayBattle</h1>
-</div>
-<div class="row">
-<div class="col-md-6">
-<h2 class="align-left">
-The aliens are invading the earth and the commandos are preparing the defend their families! This is a chance to fight for your cause!
-<br><br>
-Join thousands of runners in Singapore in this virtual, story-driven running adventure from 13 May 2016 00:00 - 15 May 2016 23:59. The winner team will be decided based on the average speed. 
-<br><br>
-This is the mission, which side will you choose? 
-<br><br>
-The Mayday Battle begins…
-  </h2>
+  <div class="col-md-6">
+    <%= link_to image_tag("home/3-combine.png", alt: "Rails logo", height: "350px", width: "auto", margin: "10px"), '#' %>
   </div>
   <div class="col-md-6">
-  <%= link_to image_tag("page 2/cute army.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "10px"),
-  '#' %>
-  <%= link_to image_tag("page 2/aliens.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "10px"),
-  '#' %>
+    <h1 class="align-left">About #MayDayBattle</h1>
+    <p>The aliens are invading the earth and the commandos are preparing the defend their families! This is a chance to fight for your cause! </p>
+    <p>Join thousands of runners in Singapore in this virtual, story-driven running adventure from 13 May 2016 00:00 - 15 May 2016 23:59. The winner team will be decided based on the total distance accumulated. This is the mission, which side will you choose? </p>
+    <p>The Mayday Battle begins…</p>
   </div>
+</div>
+</div>  
+<hr>
+
+<!-- Why Mission42   -->
+<div class="container">
+<div class="row">
+  <h1>Why #Mission42? <span style="color:red;">It is More Than a Race.</span></h1>
+</div>
+<div class="row">
+<div class="col-md-4 center">
+<%= link_to image_tag("home/4-1-runningexp.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "auto"), '#' %>
+<p><strong>UNPRECEDENTED RUNNING EXPERIENCES</strong><br>
+Join us for the first online race in Singapore. Choose your side and you can contribute to the ending of the story.
+</p>
+
+</div>
+<div class="col-md-4 center">
+<%= image_tag("home/4-2-visors.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "auto") %>
+<p><strong>GREAT RACE ENTITLEMENT</strong><br>
+Receive your very own physical race pack, featuring Compressport technical racing singlet, racing bib, finishers’ medal, certificate, and entitlements.
+</p>
+</div>
+<div class="col-md-4 center">
+<%= link_to image_tag("home/4-3-space.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "auto"), '#' %>
+<p><strong>EXCITING PRE-RACE MISSIONS</strong><br>
+Multiple pre-race missions planned out for your prior the race. Uncover the secrets and experience adventure every week.
+</p>
+</div>
 </div>
 </div> 
 
-
+<!-- Steps -->
 <div class="container">
 <div class="row">
   <h1>How to Join?</h1>
 </div>
 <div class="row">
   <div class="col-md-4">
-  <%= link_to image_tag("page3/choose.jpg", alt: "Rails logo", class: "steps"), '#' %>
+  <%= image_tag("page3/choose.jpg", alt: "Rails logo", class: "steps") %>
   </div>
   <div class="col-md-4">
     <h2 class="align-left">Step 1: </h2>
@@ -110,7 +118,7 @@ The Mayday Battle begins…
 
 <div class="row">
   <div class="col-md-4">
-  <%= link_to image_tag("page3/1.png", alt: "Rails logo", class: "steps"), '#' %>
+  <%= image_tag("page3/1.png", alt: "Rails logo", class: "steps") %>
   </div>
   <div class="col-md-4">
     <h2 class="align-left">Step 2: </h2>
@@ -123,7 +131,7 @@ The Mayday Battle begins…
 
 <div class="row">
   <div class="col-md-4">
-  <%= link_to image_tag("page3/finish.jpg", alt: "Rails logo", class: "steps"), '#' %>
+  <%= image_tag("home/5-takephoto.jpg", alt: "Rails logo", class: "steps") %>
   </div>
   <div class="col-md-4">
     <h2 class="align-left">Step 3: </h2>
@@ -136,19 +144,150 @@ The Mayday Battle begins…
     Most creative photos and routes will be rewarded with attractive prizes
   </div>
 </div>
-
 </div> 
 
+
+<!-- Race categories -->
 <div class="container">
-<h1>Samples</h1>
 <div class="row">
-<%= link_to image_tag("page3/BestArtist.jpg", alt: "Rails logo", class: "steps"), '#' %>
-<%= link_to image_tag("page3/MostCreative.jpg", alt: "Rails logo", class: "steps"), '#' %>
-<%= link_to image_tag("page3/timthumb.jpg", alt: "Rails logo", class: "steps"), '#' %>
+  <h1>Race Categories</h1>
+</div>
+<table class="table">
+  <tr class="active">
+    <th>Race Categories</th> 
+    <th>First 200 Entries</th>
+    <th>Normal Rates</th>
+    <th>Entitlement</th>
+    <th>Cut-off</th>
+  </tr>
+  <tr>
+    <td>5.0k (ENTRY)</td>
+    <td>S$19</td>
+    <td>S$29</td>
+    <td>
+      <ul>
+        <li>Compressport Race Singlet (worth $45.90)</li>
+        <li>Finishers’ Medal</li>        
+      </ul>
+    </td>
+    <td>1 hour</td>
+  </tr>
+  <tr>
+    <td>5.0k (DELUXE)</td>
+    <td>S$25</td>
+    <td>S$35</td>
+    <td>
+      <ul>
+        <li>Compressport Race Singlet (worth $45.90)</li>
+        <li>Finishers’ Medal</li>
+        <li>Compressport Headband (worth $19.90)</li>        
+      </ul>
+    </td>
+    <td>1 hour</td>
+  </tr>
+  <tr>
+    <td>10.0k</td>
+    <td>S$35</td>
+    <td>S$45</td>
+    <td>
+      <ul>
+        <li>Compressport Race Singlet (worth $45.90)</li>
+        <li>Finishers’ Medal</li>
+        <li>Compressport Visor (worth $29.90)</li> 
+        <li>Compressport sweat band (worth $9.90)</li>
+      </ul>
+    </td>
+    <td>2 hour</td>
+  </tr>
+  <tr>
+    <td>10.0k<br>(TEAM OF 4)</td>
+    <td>S$120<br>(each $30)</td>
+    <td>S$160<br>(each $40)</td>
+    <td>
+      <ul>
+        <li>Compressport Race Singlet (worth $45.90)</li>
+        <li>Finishers’ Medal</li>
+        <li>Compressport Visor (worth $29.90)</li> 
+        <li>Compressport sweat band (worth $9.90)</li>
+      </ul>
+    </td>
+    <td>accumulatvie 8 hour</td>
+  </tr>
+  <tr>
+    <td>21.1k</td>
+    <td>S$59</td>
+    <td>S$69</td>
+    <td>
+      <ul>
+        <li>Compressport Race Singlet (worth $45.90)</li>
+        <li>Finishers’ Medal</li>
+        <li>Compressport full socks (worth $89.90)</li>
+      </ul>
+    </td>
+    <td>4.5 hours</td>
+  </tr>
+</table>
+Prices include 7% GST.
+</div>
+
+
+<div class="container">
+<div class="row">
+<h1 class="center">Race Entitlement</h1>
+<ol>
+  <li>Race Bib</li>
+  <li>Compressport Race Singlet</li>
+  <li>Finishers' Medal</li>
+  <li>Finishers' E-Certificate</li>
+  <li>Finishers' Entitlement (see below)</li>
+</ol>
+</div>
+<%= image_tag("home/6-banner.png", alt: "Rails logo", width: "90%", margin: "5%")%>
+<hr>
+<%= image_tag("home/7-banner.png", alt: "Rails logo", width: "90%", margin: "5%")%>
+<hr>
+<%= image_tag("home/8-banner.png", alt: "Rails logo", width: "90%", margin: "5%")%>
+</div>
+<hr>
+
+<!-- shirtchart -->
+<div class="container">
+<%= image_tag("home/9-shirtchart.png", alt: "Rails logo", width: "90%", margin: "5%")%>
+</div>
+
+
+<!-- Race prizes -->
+<div class="container">
+<div class="row">
+<h1 class="center">Race Prizes</h1>
+ <div class="col-md-6 align-right">
+  <%= image_tag("home/10-trophy.jpg", alt: "Rails logo", height: "200px", width: "auto", margin: "10px")%>
+  </div>
+  <div class="col-md-6">
+  <p>
+    <ol>
+      <li>Most Creative Running Route</li>
+      <li>The Happiest Running Selfies</li>
+      <li>Most Interesting Race Experience Blogs</li>
+    </ol>
+    *Race Prizes will be announced in May</p>
+  </div>
 </div>
 </div>
 
+
+<!-- Samples -->
 <div class="container">
+<h1>Sample Creative Running Routes</h1>
+<div class="row center">
+<%= image_tag("home/11-1-routes.png", alt: "Rails logo", height: "200px", width: "200px", margin: "10px")%>
+<%= image_tag("home/11-2-routes.jpeg", alt: "Rails logo", height: "200px", width: "200px", margin: "10px")%>
+<%= image_tag("home/11-3-routes.jpg", alt: "Rails logo", height: "200px", width: "200px", margin: "10px")%>
+<%= image_tag("home/11-4-routes.jpg", alt: "Rails logo", height: "200px", width: "200px", margin: "10px")%>
+</div>
+</div>
+
+<!-- <div class="container">
 <div class="row">
   <h1>Race Entitlements</h1>
 </div>
@@ -179,98 +318,56 @@ Finishers' Entitlement:
 <%= link_to image_tag("page4/10km-compressport-pdt.png", alt: "Rails logo", width: "45%", margin: "2%"), '#' %>
 <%= link_to image_tag("page4/5km-compressport-pdt.png", alt: "Rails logo", width: "45%", margin: "2%"), '#' %>
 </div>
-</div>
+</div> -->
 
 
-<div class="container">
-<div class="row">
-  <h1>Race Categories</h1>
-</div>
-<table class="table">
-  <tr class="active">
-    <td>Race Categories</td> 
-    <td>First 200 Entries</td>
-    <td>Normal Rates</td>
-    <td>Entitlement</td>
-    <td>Cut-off</td>
-  </tr>
-  <tr>
-    <td>5.0k</td>
-    <td>S$19</td>
-    <td>$25</td>
-    <td>
-      <ul>
-        <li>Race T-shirts (worth $20)</li>
-        <li>Finishers’ Medal</li>
-        <li>Compressports Visor (worth $29)</li>
-        <li>Sponsors’ goodies (coming soon)</li>
-      </ul>
-    </td>
-    <td>1 hour</td>
-  </tr>
-  <tr>
-    <td>10.0k</td>
-    <td>S$29</td>
-    <td>$35</td>
-    <td>
-      <ul>
-        <li>Race T-shirts (worth $20)</li>
-        <li>Finishers’ Medal</li>
-        <li>Compressports Arm Sleeve (worth $59)</li>
-        <li>Sponsors’ goodies (coming soon)</li>
-      </ul>
-    </td>
-    <td>2 hour</td>
-  </tr>
-  <tr>
-    <td>10.0k<br>(Team of 4)</td>
-    <td>S$99<br>(each $25)</td>
-    <td>$125<br>(each $31)</td>
-    <td>
-      <ul>
-        <li>Race T-shirts (worth $20)</li>
-        <li>Finishers’ Medal</li>
-        <li>Compressports Arm Sleeve (worth $59)</li>
-        <li>Sponsors’ goodies (coming soon)</li>
-      </ul>
-    </td>
-    <td>accumulatvie 8 hour</td>
-  </tr>
-  <tr>
-    <td>21.1k</td>
-    <td>S$39</td>
-    <td>$45</td>
-    <td>
-      <ul>
-        <li>Race T-shirts (worth $20)</li>
-        <li>Finishers’ Medal</li>
-        <li>Compressports Calf Sleeve (worth $79)</li>
-        <li>Sponsors’ goodies (coming soon)</li>
-      </ul>
-    </td>
-    <td>1 hour</td>
-  </tr>
-</table>
-
-</div>
 
 
+<!-- Race pack collection -->
 <div class="container">
 <div class="row">
   <h1>Race Pack Collection</h1>
 </div>
 <div class="row">
-  <h2>You could choose either mail or physical collection from 20 Apr 2016 onwards.</h2>
+<div class="col-md-6">
+  <p>We would like to invite you to our Running Symposium on 02 Apr 2016 (Saturday) 3:00pm - 6:00pm.You can collect the race pack on 02 Apr 2016 and also enjoy our great program specially designed for you.</p>
+  <p>Date: 02 Apr 2016 (Sunday)<br>
+  Time: 12:00 noon - 8:00 pm<br>
+  Venue: The Meeting Point, Ayer Rajah Crescent BLK 73,  S139952 (10 min walk from One-North MRT) <br>
+  Alternative race pack collection method would be announced in the future. </p>
+</div>
+<div class="col-md-6">
+<%= image_tag("home/12-blk71.jpg", alt: "Rails logo", height: "250px", width: "auto", margin: "10px")%>
 </div>
 </div>
+<hr>
 
+<!-- mission 42 series -->
 <div class="container">
 <div class="row">
   <h1>Mission 42 Series</h1>
 </div>
 <div class="row">
-<h1><a>#1 MayDay Battle</a></h1>
-<h1><a>#2 Victory of District</a></h1>
-<h1><a>#3 (Coming Soon)</a></h1>
+<h1><a>#MayDay Battle</a></h1>
+<h2><a>#Victory of District - August</a></h2>
+<h2><a>(Coming Soon)</a></h2>
+</div>
+</div>
+
+<!-- enquires -->
+<div class="enquiry-hero">
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+  <p>Please send us your enquiries: <br>contact@42race.com</p>
+  <p>For sponsorship enquiries, please contact us at: <br>contact@42race.com</p>
+  <p>ALL RIGHTS RESERVED. © 2016 42RACE.</p>
+  </div>
+  <div class="col-md-6">
+    <h1>Contact Us</h1>
+    <li><%= link_to "Facebook", "https://www.facebook.com/42race" %></li>
+    <li><%= link_to "Help", help_path %></li>
+  </div>
+</div>
 </div>
 </div>

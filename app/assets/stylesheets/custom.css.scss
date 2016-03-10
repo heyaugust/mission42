@@ -21,6 +21,17 @@ textarea {
   margin-bottom: 10px;
 }
 
+.align-right {
+  text-align: right;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,11 +121,16 @@ footer ul li {
 }
 
 .jumbotron {
-	background: url('/assets/hero.png');
+	background: url('/assets/home/1-hero.jpg');
 	color: white;
+  margin-top: -50px;
+  span {
+    text-align: left;
+  }
 }
-.jumbotron h2{
+.jumbotron h1{
 	color: white;
+  text-align: right;
 }
 
 .steps {
@@ -191,6 +207,10 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.radio-inline {
+  width: auto;
 }
 
 #error_explanation {

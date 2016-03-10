@@ -10,7 +10,13 @@
       <%= f.text_field :name, class: 'form-control' %>
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <%= f.email_field :email, class: 'form-control' %>      
+      <%= f.label :team, "Who will you pledge your Loyalty to?" %><br>
+      
+      <%= f.radio_button(:team, 'Alien', class: 'radio-inline') %>
+      <%= f.label :team, "Alien" %><br>
+      <%= f.radio_button(:team, 'Human', class: 'radio-inline') %>
+      <%= f.label :team, "Commando" %><br>
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
