@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310142256) do
+ActiveRecord::Schema.define(version: 20160310163540) do
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
@@ -55,17 +55,31 @@ ActiveRecord::Schema.define(version: 20160310142256) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
     t.string   "password_digest"
     t.string   "remember_digest"
-    t.boolean  "admin",             default: false
+    t.boolean  "admin",                  default: false
     t.string   "activation_digest"
-    t.boolean  "activated",         default: false
+    t.boolean  "activated",              default: false
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.datetime "reset_sent_at"
     t.integer  "team"
+    t.integer  "contact_number"
+    t.date     "born_on"
+    t.integer  "gender"
+    t.text     "address1"
+    t.text     "address2"
+    t.string   "postal_code"
+    t.string   "country_of_residence"
+    t.string   "nationality"
+    t.string   "emergency_contact_name"
+    t.integer  "emergency_contact_no"
+    t.boolean  "medical_condition"
+    t.integer  "singlet_size"
+    t.integer  "socks_size"
+    t.string   "racebibname"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

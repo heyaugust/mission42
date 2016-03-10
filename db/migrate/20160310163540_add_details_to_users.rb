@@ -8,7 +8,6 @@ class AddDetailsToUsers < ActiveRecord::Migration
   	add_column :users, :postal_code, :string
   	add_column :users, :country_of_residence, :string
   	add_column :users, :nationality, :string
-  	add_column :users, :nationality, :string
   	add_column :users, :emergency_contact_name, :string
   	add_column :users, :emergency_contact_no, :integer
   	add_column :users, :medical_condition, :boolean
