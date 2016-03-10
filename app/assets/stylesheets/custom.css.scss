@@ -33,9 +33,13 @@ textarea {
     margin-bottom: 0px;
 }
 /* typography */
+body {
+  font-family: "Lato"
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: "Lato";
 }
 
 h1 {
@@ -301,4 +305,13 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.enquiry-hero {
+  background: url('/assets/home/1-hero.jpg');
+  color: white;
+  a {
+    color : white;
+  }
+  padding-top: 10px;
 }
