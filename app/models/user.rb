@@ -1,17 +1,39 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                :integer          not null, primary key
+#  name              :string
+#  email             :string
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#  password_digest   :string
+#  remember_digest   :string
+#  admin             :boolean          default(FALSE)
+#  activation_digest :string
+#  activated         :boolean          default(FALSE)
+#  activated_at      :datetime
+#  reset_digest      :string
+#  reset_sent_at     :datetime
+#  team              :integer
+#
+
 class User < ActiveRecord::Base
   has_many :microposts, dependent: :destroy
+  has_many :team_members #User.find_by_email('zhoumi@ss.xc').team_members ||  TeamMember.where(team_leader_id: x); x = User.find_by_email('zhoumi@ss.xc').id
+
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
-	# validates :name, presence: true, length: {maximum: 50}
+	validates :name, presence: true, length: {maximum: 50}
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  # validates :email, presence: true, length: { maximum: 255 },
-                    # format: { with: VALID_EMAIL_REGEX },
-                    # uniqueness: { case_sensitive: false }
+  validates :email, presence: true, length: { maximum: 255 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
   has_secure_password
-  # validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
-  # enum team: {Alien: 0, Human: 1}
-  # Returns the hash digest of the given string.
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
+  enum team: {Alien: 0, Human: 1}
+  Returns the hash digest of the given string.
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost

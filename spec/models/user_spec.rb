@@ -18,13 +18,11 @@
 #  team              :integer
 #
 
-module UsersHelper
+require 'rails_helper'
 
-	# Returns the Gravatar for the given user.
-  def gravatar_for(user, options = { size: 50})
-    gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
-    gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
-    size = options[:size]
-    image_tag(gravatar_url, alt: user.name, class: "gravatar")
+RSpec.describe Transaction, type: :model do
+  context 'safety checks' do
+
+
   end
 end
