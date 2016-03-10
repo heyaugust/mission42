@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310140042) do
+ActiveRecord::Schema.define(version: 20160310141856) do
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(version: 20160310140042) do
     t.string   "campaign_id"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.string   "purchase_type"
+    t.integer  "quantity_purchased"
+    t.decimal  "cost_of_purchase",   precision: 2
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "users", force: :cascade do |t|
