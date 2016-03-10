@@ -8,6 +8,7 @@ class CreateRacePackages < ActiveRecord::Migration
       t.text :description
       t.integer :early_bird_quota
       t.integer :quantity_sold
+      t.string :campaign_id
 
       t.timestamps null: false
     end
