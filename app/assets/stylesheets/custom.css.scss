@@ -127,10 +127,18 @@ footer ul li {
 .jumbotron {
 	background: url('/assets/home/1-hero.jpg');
 	color: white;
-  margin-top: -50px;
   span {
     text-align: left;
   }
+  @media (min-width: 600px) {  
+  margin: -50px -200px 0 -200px;
+  .inner-hero {
+    float: right;
+    width: auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
 }
 .jumbotron h1{
 	color: white;
